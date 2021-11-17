@@ -3,7 +3,7 @@ import React from 'react'
 export const Content = () => {
   return (
     <div>
-      content
+      count
     </div>
   )
 }
