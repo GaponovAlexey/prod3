@@ -5,7 +5,7 @@ export const EditPosts = () => {
   const {id} = useParams()
   return (
     <div>
-      <h1>edit Posts</h1>
+      <h1>edit Posts{id}</h1>
     </div>
   )
 }

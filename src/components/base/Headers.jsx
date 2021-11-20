@@ -20,7 +20,7 @@ export const Headers = () => {
               <CustomLInks to='/about'>Aboutn</CustomLInks>
             </li>
             <li>
-              <CustomLInks to='/count'>Count</CustomLInks>
+              <CustomLInks to='/login'>Login</CustomLInks>
             </li>
             <li>
               <CustomLInks to='/movies'>Movie</CustomLInks>
