@@ -1,10 +1,8 @@
 import React from 'react'
 
-import {  Outlet,  } from 'react-router-dom'
-import { CustomLInks } from '../hooks/CustomLInks'
+import { Link, Outlet } from 'react-router-dom'
 
 export const Headers = () => {
-
   return (
     <>
       <nav>
@@ -14,16 +12,16 @@ export const Headers = () => {
           </a>
           <ul id='nav-mobile' className='right hide-on-med-and-down'>
             <li>
-              <CustomLInks to='/'>home</CustomLInks>
+              <Link to='/'>home</Link>
             </li>
             <li>
-              <CustomLInks to='/about'>Aboutn</CustomLInks>
+              <Link to='/about'>Aboutn</Link>
             </li>
             <li>
-              <CustomLInks to='/login'>Login</CustomLInks>
+              <Link to='/cont'>Login</Link>
             </li>
             <li>
-              <CustomLInks to='/movies'>Movie</CustomLInks>
+              <Link to='/movies'>Movie</Link>
             </li>
           </ul>
         </div>
