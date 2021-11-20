@@ -17,3 +17,8 @@ code {
   min-height: calc(100vh - 70px - 64px);
   padding: 1.5rem;
 }
+
+.active-link {
+  color: var(--color-active);
+  cursor: progress;
+}

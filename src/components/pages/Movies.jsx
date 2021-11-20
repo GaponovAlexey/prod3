@@ -1,10 +1,26 @@
-import React from 'react'
-import { useParams, useMatch } from 'react-router'
+import React, { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 
 export const Movies = () => {
-  // const {title} = useParams()
-  const match  = useMatch()
-  // console.log(match);
+  const [posts, setPosts] = useState([])
+  // const { id } = useParams()
 
-  return <div>some movies </div>
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then((res) => res.json())
+      .then((data) => setPosts(data))
+  }, [])
+
+  return (
+    <div>
+      <button to='/create'>
+      Create Posts
+      </button>
+      {posts.map((e) => (
+        <Link key={e.id} to={`/movies/${e.id}`}>
+          <li>{e.title}</li>
+        </Link>
+      ))}
+    </div>
+  )
 }

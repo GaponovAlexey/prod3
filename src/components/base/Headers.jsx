@@ -1,12 +1,10 @@
 import React from 'react'
 
-import { Link, Outlet, Routes, Route } from 'react-router-dom'
-import { About } from '../pages/About'
-import { Content } from '../pages/Content'
-import { Home } from '../pages/Home'
-import { NotFound } from '../pages/NotFound'
+import {  Outlet,  } from 'react-router-dom'
+import { CustomLInks } from '../hooks/CustomLInks'
 
 export const Headers = () => {
+
   return (
     <>
       <nav>
@@ -16,16 +14,16 @@ export const Headers = () => {
           </a>
           <ul id='nav-mobile' className='right hide-on-med-and-down'>
             <li>
-              <Link to='/'>home</Link>
+              <CustomLInks to='/'>home</CustomLInks>
             </li>
             <li>
-              <Link to='/about'>Aboutn</Link>
+              <CustomLInks to='/about'>Aboutn</CustomLInks>
             </li>
             <li>
-              <Link to='/count'>Count</Link>
+              <CustomLInks to='/count'>Count</CustomLInks>
             </li>
             <li>
-              <Link to='/movies'>Movie</Link>
+              <CustomLInks to='/movies'>Movie</CustomLInks>
             </li>
           </ul>
         </div>
