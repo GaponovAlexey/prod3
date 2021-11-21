@@ -1,11 +1,9 @@
 import React from 'react'
 
-export const Movies = () => {
-
-
+export const Item = () => {
   return (
     <div>
-      Movies
+      
     </div>
   )
 }

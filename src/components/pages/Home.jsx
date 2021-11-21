@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { CategoreList } from './Category/CategoreList'
-import { getAllCategories } from '../api'
+import { getAllCategories } from '../API/api'
 
 export const Home = () => {
   const [catalog, setCatalog] = useState([])
@@ -11,7 +11,6 @@ export const Home = () => {
 
   return (
     <div>
-      hone
       <CategoreList catalog={catalog} />
     </div>
   )
