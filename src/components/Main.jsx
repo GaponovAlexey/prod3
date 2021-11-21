@@ -25,7 +25,6 @@ export const Main = () => {
         </Routes>
       </div>
       <main className='container main'></main>
-
       <footer>
         <Footer />
       </footer>
