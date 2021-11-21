@@ -11,7 +11,7 @@ export const Meal = ({idMeal,strMealThumb, strMeal }) => {
       <span className='card-title'>{strMeal}</span>
     </div>
     <div className='card-action'>
-      <Link to={`/meal/${strMeal}`}>watch recipe</Link>
+      <Link to={`/${idMeal}`}>watch recipe</Link>
     </div>
   </div>
   )

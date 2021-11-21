@@ -6,17 +6,10 @@ export const Headers = () => {
   return (
     <>
       <nav>
-        <div className='nav-wrapper'>
+        <div className='nav-wrapper cyan lighten-3 '>
           <Link to='/' className='brand-logo'>
-            Logo
+            Categoty
           </Link>
-          <ul id='nav-mobile' className='right hide-on-med-and-down'>
-            <li>
-              <Link to='/' className='brand-logo right'>
-                Home
-              </Link>
-            </li>
-          </ul>
         </div>
       </nav>
       <Outlet />

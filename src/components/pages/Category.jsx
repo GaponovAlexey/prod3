@@ -11,7 +11,6 @@ export const Category = () => {
     getfilterByCategiry(name).then((data) => setMeals(data.meals))
   }, [name])
 
-  console.log(meals)
   return  <MealList meals={meals} />
 
 }
