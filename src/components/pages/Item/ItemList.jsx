@@ -13,7 +13,7 @@ export const ItemList = () => {
 
   return (
     <div className='conteiner'>
-      {item.map((el) => (
+      {item?.map((el) => (
         <Item key={el.idMeal} {...el} recipe={item} />
       ))}
     </div>
