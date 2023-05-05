@@ -1,20 +1,21 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: no-repeat url("../public/img/back-min.png") center center / cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+
 }
 
 .main {
   min-height: calc(97.7vh - 70px - 64px);
-  padding: 1.5rem;
 }
 
 .active-link {
@@ -32,14 +33,86 @@ code {
   display: flex;
   flex-direction: column;
 }
+
 .card-content {
   flex-grow: 1;
 }
 
-img,iframe {
+img,
+iframe {
   max-width: 100%;
 }
+
 iframe {
   width: 600px;
   height: 350px;
+}
+
+.header {
+  text-align: right;
+  position: relative;
+}
+
+.header-text {
+  padding: 41px 0 0px 10px;
+}
+
+.brand-logo {
+  padding-left: 87px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 41px;
+  right: 41px;
+  padding: 3%;
+  background: no-repeat url('../public/logo.svg') center center / cover;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-text {
+  position: relative;
+  width: 389.98px;
+  height: 217.25px;
+  left: 137px;
+  top: 36.96px;
+
+  z-index: 2;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;  
+  font-size: 64px;
+  line-height: 78px;
+
+  color: #FD8702;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-text-shadow {
+  position: absolute;
+  width: 390px;
+  height: 229px;
+  left: 327px;
+  top: 86px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 78px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.main-buddy {
+  background: no-repeat url('../public/img/buddy.png') center center / cover;
+  padding: 15%;
 }
