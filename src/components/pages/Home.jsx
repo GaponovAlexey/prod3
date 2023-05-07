@@ -31,11 +31,9 @@ export const Home = () => {
   return (
     <div>
       <div className="main-logo">
-        <div className="main-text">
-          FIND YOUR PERFECT RECIPE 
-        </div>
-        <div className="main-text-shadow">
-          FIND YOUR PERFECT RECIPE
+        <div className="main-text-wrapper ">
+          <div className="main-text">FIND YOUR PERFECT RECIPE</div>
+          <div className="main-text-shadow">FIND YOUR PERFECT RECIPE</div>
         </div>
         <div className="main-buddy"></div>
       </div>
