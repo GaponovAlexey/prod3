@@ -4,7 +4,6 @@ export const Footer = () => {
   return (
     <div>
       <footer className='page-footer cyan lighten-2 '>
-      
         <div className='footer-copyright'>
           <div className='container'>
             © { new Date().toLocaleDateString()} Copyright Text
