@@ -71,6 +71,7 @@ iframe {
 .main-logo {
   display: flex;
   justify-content: space-between;
+  padding-top: 3rem;
 }
 
 .main-text-wrapper {
@@ -117,4 +118,8 @@ iframe {
 .main-buddy {
   background: no-repeat url("../public/img/buddy.png") center center / cover;
   padding: 15%;
+}
+
+.main-catalog {
+  background-color: red;
 }

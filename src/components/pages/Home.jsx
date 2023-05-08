@@ -37,7 +37,7 @@ export const Home = () => {
         </div>
         <div className="main-buddy"></div>
       </div>
-      <div>
+      <div className="main-catalog" >
         <Search cb={handleSearch} />
         <CategoreList catalog={filteredCatalog} />
       </div>
